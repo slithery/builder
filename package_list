@@ -1,33 +1,16 @@
-# x86_64/any
+#
+# AUR package lists in build order for custom repo
 #
 
-clean-chroot-manager
+pkg64=(     'clean-chroot-manager'
+            'foldingathome'
+            'perl-json-pp' 'perl-linux-distribution' 'perl-io-lockedfile' 'perl-log-loglite' 'longview'
+            'perl-webservice-linode' 'linode-cli')
 
-foldingathome
+pkg64-dev=( 'mediterranian-gtk-themes-git'
+            'compton-git' )
 
-perl-json-pp
-perl-linux-distribution
-perl-io-lockedfile
-perl-log-loglite
-longview
+pkg32=(     'foldingathome' )
 
-perl-webservice-linode
-linode-cli
-
-
-# x86_64/any-dev
-#
-
-mediterranian-gtk-themes-git
-
-
-# i686
-#
-
-foldingathome
-
-
-# i686-dev
-#
-
+pkg32-dev=( 'compton-git' )
 
