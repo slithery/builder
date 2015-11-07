@@ -1,0 +1,33 @@
+# x86_64/any
+#
+
+clean-chroot-manager
+
+foldingathome
+
+perl-json-pp
+perl-linux-distribution
+perl-io-lockedfile
+perl-log-loglite
+longview
+
+perl-webservice-linode
+linode-cli
+
+
+# x86_64/any-dev
+#
+
+mediterranian-gtk-themes-git
+
+
+# i686
+#
+
+foldingathome
+
+
+# i686-dev
+#
+
+

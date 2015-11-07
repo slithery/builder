@@ -42,5 +42,50 @@ shift $(($OPTIND - 1))
 # Main script.
 #
 
-echo "Main script here"
+
+
+# Set variables
+#
+
+# Source package_list
+
+
+
+# Declare functions
+#
+
+# build() $ARCH $PKGNAME
+
+# updated() $PKGNAME
+
+
+
+# Main program logic
+#
+
+# Check nspawn container directory
+
+# Update container
+echo
+echo "Updating container..."
+echo
+
+# Build 64-bit/any packages
+echo
+echo "Building 64-bit and architecture independent packages..."
+echo
+# for * in $x86_64/any do
+#   if updated $i then build 64 $i
+# done
+
+# Build 64-bit/any development packages
+echo
+echo "Building 64-bit and architecture independent development packages"
+echo
+
+# for * in $x86_64/any-dev do
+#   build 64 $i
+# done
+
+
 exit 0
