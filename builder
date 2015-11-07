@@ -2,8 +2,8 @@
 
 SCRIPT_NAME="builder"
 SCRIPT_DESCRIPTION="Custom repo builder."
-SCRIPT_VERSION="0.1"
-SCRIPT_AUTHOR=""
+SCRIPT_VERSION="0.1-dev"
+SCRIPT_AUTHOR="Slithery"
 
 # Script usage
 #
