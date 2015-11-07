@@ -10,15 +10,15 @@ SCRIPT_AUTHOR="Slithery"
 
 usage () { cat <<-USAGETXT
 
-	$SCRIPT_NAME
-	v$SCRIPT_VERSION by $SCRIPT_AUTHOR
-	
-	$SCRIPT_DESCRIPTION
-	
-	  USAGE:  $SCRIPT_NAME [OPTIONS]
-	
-	  OPTIONS:  -h     Display this help.
-	            -V     Show version.
+    $SCRIPT_NAME
+    v$SCRIPT_VERSION by $SCRIPT_AUTHOR
+
+    $SCRIPT_DESCRIPTION
+
+      USAGE:  $SCRIPT_NAME [OPTIONS]
+
+      OPTIONS:  -h     Display this help.
+                -V     Show version.
 
 USAGETXT
 }
@@ -28,13 +28,13 @@ USAGETXT
 #
 
 while getopts :hV flag
-	do
+    do
     case "$flag" in
     (h) usage; exit 0;;
     (V) echo "$SCRIPT_VERSION"; exit 0;;
     (*) echo "Invalid option, use -h for help."; exit 1;;
     esac
-	done
+    done
 
 shift $(($OPTIND - 1))
 
@@ -74,7 +74,7 @@ echo
 echo
 echo "Building 64-bit and architecture independent packages..."
 echo
-# for * in $x86_64/any do
+# for * in "$PKG64" do
 #   if updated $i then build 64 $i
 # done
 
@@ -82,8 +82,23 @@ echo
 echo
 echo "Building 64-bit and architecture independent development packages"
 echo
+# for * in "$PKG64-DEV" do
+#   build 64 $i
+# done
 
-# for * in $x86_64/any-dev do
+# Build 32-bit packages
+echo
+echo "Building 32-bit packages..."
+echo
+# for * in "$PKG32" do
+#   if updated $i then build 64 $i
+# done
+
+# Build 32-bit development packages
+echo
+echo "Building 32-bit development packages"
+echo
+# for * in "$PKG32-DEV" do
 #   build 64 $i
 # done
 

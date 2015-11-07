@@ -2,15 +2,20 @@
 # AUR package lists in build order for custom repo
 #
 
-pkg64=(     'clean-chroot-manager'
+PKG64=(     'clean-chroot-manager'
             'foldingathome'
+            'pulseaudio-ctl'
+            'profile-sync-daemon'
+            'python-pypeg2' 'qutebrowser'
             'perl-json-pp' 'perl-linux-distribution' 'perl-io-lockedfile' 'perl-log-loglite' 'longview'
-            'perl-webservice-linode' 'linode-cli')
+            'perl-webservice-linode' 'linode-cli' )
 
-pkg64-dev=( 'mediterranian-gtk-themes-git'
-            'compton-git' )
+PKG64-DEV=( 'mediterranean-gtk-themes-git'
+            'compton-git'
+            'screenfetch-git'
+            'qutebrowser-git' )
 
-pkg32=(     'foldingathome' )
+PKG32=(     'foldingathome' )
 
-pkg32-dev=( 'compton-git' )
+PKG32-DEV=( 'compton-git' )
 
