@@ -15,7 +15,7 @@ usage () { cat <<-USAGETXT
 	
 	$SCRIPT_DESCRIPTION
 	
-	  USAGE:  $SCRIPT_NAME [OPTIONS] VAR1
+	  USAGE:  $SCRIPT_NAME [OPTIONS]
 	
 	  OPTIONS:  -h     Display this help.
 	            -V     Show version.
