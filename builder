@@ -43,12 +43,8 @@ shift $(($OPTIND - 1))
 #
 
 
-
 # Set variables
 #
-
-# Source package_list
-
 
 
 # Declare functions
@@ -57,7 +53,6 @@ shift $(($OPTIND - 1))
 # build() $ARCH $PKGNAME
 
 # updated() $PKGNAME
-
 
 
 # Main program logic
@@ -70,37 +65,14 @@ echo
 echo "Updating container..."
 echo
 
-# Build 64-bit/any packages
-echo
-echo "Building 64-bit and architecture independent packages..."
-echo
-# for * in "$PKG64" do
-#   if updated $i then build 64 $i
-# done
+# Build packages
+#for i in (awk '!/^ *#/ && NF' package_list); do
+#  echo "$i"
+#done
 
-# Build 64-bit/any development packages
-echo
-echo "Building 64-bit and architecture independent development packages"
-echo
-# for * in "$PKG64-DEV" do
-#   build 64 $i
-# done
-
-# Build 32-bit packages
-echo
-echo "Building 32-bit packages..."
-echo
-# for * in "$PKG32" do
-#   if updated $i then build 64 $i
-# done
-
-# Build 32-bit development packages
-echo
-echo "Building 32-bit development packages"
-echo
-# for * in "$PKG32-DEV" do
-#   build 64 $i
-# done
+while read line; do
+  echo "Build: $line"
+done < <(awk '!/^ *#/ && NF' package_list)
 
 
 exit 0

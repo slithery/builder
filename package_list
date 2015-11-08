@@ -1,16 +1,29 @@
+#
+# AUR package lists in build order for custom repo
+#
+
+# No AUR reqs/deps
 clean-chroot-manager
 compton-git
 foldingathome
+get_iplayer-git
 mediterranean-gtk-themes-git
+modprobed-db
 profile-sync-daemon
 pulseaudio-ctl
 screenfetch-git
+
+# No AUR deps
 perl-io-lockedfile
 perl-json-pp
 perl-linux-distribution
 perl-webservice-linode
 python-pypeg2
+
+# Deps with AUR reqs
 perl-log-loglite
+
+# Packages with AUR deps
 linode-cli
 longview
 qutebrowser-git
